@@ -8,11 +8,12 @@ body{
 
 .header{
     background: #FFF8F3;
-    height: 100vh;
+    /* height: 100vh; */
     padding-left: 60px ;
     background-image: url(images/header_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+   
+    background-position: bottom right;
 }
 nav .web-title{
     font-size: 45px;
@@ -67,10 +68,13 @@ nav button{
 /* banner */
 .banner{
     display: flex;
+    justify-content: space-between;
+    
 }
 
-.banner .left{
+.banner-left{
     padding-top: 150px;
+    max-width: 580px;
 }
 
 .banner-greet{
@@ -93,8 +97,8 @@ nav button{
     margin-bottom: 20px;
 }
 
-.left button{
-    width: 200px;
+.banner-left .first{
+    width: 190px;
     height: 50px;
     border-radius: 5px;
     background-color: #FD6E0A;
@@ -102,10 +106,58 @@ nav button{
     border: 0;
 }
 
-.left button a{
+.banner-left .last{
+    width: 190px;
+    height: 50px;
+    background-color: #FFF8F3;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: 2px solid #FD6E0A;
+
+}
+
+.banner-left .first a{
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     color: white;
     text-decoration: none;
 }
+
+.banner-left .last a{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    color: #FD6E0A;
+    text-decoration: none;
+}
+
+.banner-image{
+    /* width: 500px; */
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+/* main start here */
+
+/* about start here */
+
+.about{
+    margin: 130px 230px;
+    background-color: #FFF8F3;
+    padding: 120px;
+}
+.about-title{
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+.about-paragraph{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    }
